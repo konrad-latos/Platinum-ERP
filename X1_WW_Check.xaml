@@ -1,0 +1,70 @@
+﻿<Window x:Class="Platinum_ERP.X1_WW_Check"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Platinum_ERP"
+        mc:Ignorable="d"
+        Title="X1_WW_Check" Height="580" Width="1000" Loaded="Window_Loaded" ResizeMode="NoResize">
+
+    <Grid x:Name="X1_Check_Grid1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="X1_Check_DGV1" Margin="10" Grid.Column="0"/>
+
+        <StackPanel Grid.Column="1" Width="477" Name="X1_Check_C1">
+            <Grid Grid.Column="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <StackPanel Grid.Column="0">
+                    <Label Content="Numer wewnętrzny:"/>
+                    <Label Content="Model:"/>
+                    <Label Content="Numer seryjny:"/>
+                    <Label Content="Ostatni przebieg:"/>
+                    <Label Content="Aktualny przebieg:"/>
+                    <Label Content="Data badania:"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Width="300" Margin="0,0,10,0">
+                    <TextBox x:Name="X1_Check_Add_IN_TB" Height="29.27" Margin="0,3,10,3"/>
+                    <TextBox x:Name="X1_Check_Add_MOD_TB" Height="29.27" Margin="0,3,10,3"/>
+                    <TextBox x:Name="X1_Check_Add_NS_TB" Height="29.27" Margin="0,3,10,3"/>
+                    <TextBox x:Name="X1_Chech_Add_LMTH_TB" Height="29.27" Margin="0,3,10,3"/>
+                    <TextBox x:Name="X1_Check_Add_AMTH_TB" Height="29.27" Margin="0,3,10,3"/>
+                    <TextBox x:Name="X1_Check_Add_DATE_TB" Height="29.27" Margin="0,3,10,3"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+                    <Separator Width="Auto" Margin="0,20,20,20">
+                        <Separator.RenderTransform>
+                            <ScaleTransform ScaleY="3" />
+                        </Separator.RenderTransform>
+                    </Separator>
+                    <WrapPanel Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Content="Zapisz przegląd" Margin="0,0,10,0" Width="Auto" MinWidth="150"/>
+                        <Button Content="Anuluj wpis" Margin="0,0,10,0" Width="Auto" MinWidth="150" Click="Button_Click_1"/>
+                    </WrapPanel>
+                </StackPanel>
+                
+                
+            </Grid>
+        </StackPanel>
+        <WrapPanel Grid.Row="1">
+            <Button x:Name="X1_Check_Bt1" Height="50" Width="100" Margin="10" Content="Nowy przegląd" VerticalAlignment="Bottom" Click="Button_Click" />
+        </WrapPanel>
+    </Grid>
+
+
+</Window>

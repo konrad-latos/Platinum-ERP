@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platinum ERP", "Platinum ERP.csproj", "{5A59E9B6-B122-4C6F-8288-85D0019D10A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data_Files", "Data_Files", "{5F242AD5-80A5-48AC-B47F-40B319E02610}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A59E9B6-B122-4C6F-8288-85D0019D10A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A59E9B6-B122-4C6F-8288-85D0019D10A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A59E9B6-B122-4C6F-8288-85D0019D10A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A59E9B6-B122-4C6F-8288-85D0019D10A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9044273F-F3BF-4540-989C-59D441F53848}
+	EndGlobalSection
+EndGlobal
